@@ -7,12 +7,9 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 
 import App from './App';
+import { reducer } from './reducers'
 
-function reducer() {
-    return {
-        titie: 'hello',
-    }
-}
+
 
 const store = createStore(reducer);
 
