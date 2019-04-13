@@ -26,14 +26,25 @@ class TodoList extends React.Component {
 
     render() {
         return (
-            <div className='todo-list-wrapper'>
-                {this.props.todos.map((todo, index) => (
-                    <h4 onClick={() => this.toggleCompleted(todo.id)} key={todo.id}>
-                        {todo.value}
-                        {todo.value && <i class="fas fa-check-circle"/>}
-                    </h4>
-                ))}
-            </div>
+            <>
+                <div className='todo-list-wrapper'>
+                    {this.props.todos.map((todo, index) => (
+                        <h4 onClick={() => this.toggleCompleted(todo.id)} key={todo.id}>
+                            {todo.value}
+                            {todo.completed && <i className="fas fa-check-circle"/>}
+                        </h4>
+                    ))}
+                </div>
+                <form>
+                    <input
+                        type='text'
+                        value={this.state.todo}
+                        onChange={this.handleChanges}
+                        placeholder='Add a New Task'
+                    />
+                </form>
+                <button onClick={this.addValue}>Add Task</button>
+            </>
         )
     }
 }
