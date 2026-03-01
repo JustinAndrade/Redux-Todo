@@ -1,0 +1,67 @@
+.addBtn {
+    display: none;
+
+}
+
+button {
+    margin: 0 25px;
+}
+
+.closeBtn {
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 0 25px 0;
+}
+
+.button {
+    background: coral;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+}
+
+.button:hover {
+    background: #333;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1% 5%;
+    font-size: 24px;
+}
+
+
+.todo-list-wrapper {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#todo-modal {
+    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.todo-content {
+    position: absolute;
+    margin: 10% 38%;
+    padding: 1rem 6rem 3rem 5rem;
+    background-color: #f4f4f4;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+.todo {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
